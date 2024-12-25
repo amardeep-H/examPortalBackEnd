@@ -12,6 +12,8 @@
 	<groupId>com.examportal</groupId>
 	<artifactId>examportal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<!-- Change packaging to war -->
+	<packaging>war</packaging>
 	<name>examportal</name>
 	<description>backend for examserver project</description>
 	<properties>
@@ -76,7 +78,11 @@
 		</dependency>
 
 
-
+		<dependency><!--added this to produce war file for deplying using jenkins-->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 
