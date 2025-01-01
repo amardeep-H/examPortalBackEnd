@@ -17,7 +17,7 @@
 	<name>examportal</name>
 	<description>backend for examserver project</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -81,7 +81,7 @@
 		<dependency><!--added this to produce war file for deplying using jenkins-->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
+			<scope>compile</scope> <!--provided-->
 		</dependency>
 
 	</dependencies>
